@@ -9,13 +9,41 @@
   <title>Frontend Mentor | E-commerce product page</title>
 </head>
 <body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
+  <div class="wrapper">
+    <!--Navigation Bar-->
+    <nav>
+      <div class="nav-wrapper">
+        <div class="nav_left-sec">
+          <img src="images/icon-menu.svg" alt="menu" class="hidden menu">
+          <img src="images/logo.svg" alt="menu" class="nav_logo">
+          <div class="overlay"></div>
+          <ul class="'nav_links">
+            <img src="images/icon-close.svg" alt="close" class="close-btn hidden">
+            <li class="nav_link">Collections</li>
+            <li class="nav_link">Men</li>
+            <li class="nav_link">Women</li>
+            <li class="nav_link">About</li>
+            <li class="nav_link">Contact</li>
+          </ul>
+        </div>
+        <div class="nav_right-sec">
+          <div class="cart-wrapper">
+            <button class="cart-btn">
+              <span class="indicator"></span>
+              <img src="images/icon-cart.svg" alt="cart" class="cart">             
+            </button>
+            <div class="cart-wrp invisible">
+              <p class="cart-heading">Cart</p>
+              <div class="divider"></div>
+              <div class="cart-content empty">
+                <p>Your cart is empty</p>
+              </div>
+             </div>
+            </div>
+            <img src="images/image-avatar.png" alt="avatar">
+          </div>
+        </div>
+    </nav>
   Sneaker Company
 
   Fall Limited Edition Sneakers
