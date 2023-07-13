@@ -1,0 +1,24 @@
+const menuBtn = document.getElementById("menu-btn");
+const overlay = document.querySelector(".overlay");
+const menu = document.querySelector(".nav_links");
+const closeBtn = document.querySelector(".close-btn");
+const cartBtn = document.querySelector(".cart-btn");
+const indicator = document.querySelector(".indicator");
+const cart = document.querySelector(".cart-wrp");
+const wrp = document.querySelector(".cart-content");
+const mainThumbnail = document.querySelector(".main-thumbnail");
+const thumbMob = document.querySelector(".thumb-mob");
+const slider = document.querySelector(".mobile-thumb");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("previous");
+const images = document.querySelectorAll(".preview img");
+const minusBtn = document.querySelector("#minus");
+const plusBtn = document.querySelector("#plus");
+const amount = document.querySelector(".amount");
+const addBtn = document.querySelector(".add_btn");
+const mainThumbnailLightBox = document.querySelector(".lightbox-wrapper .main-thumbnail");
+const closeLightboxBtn = document.querySelector(".close-lightbox");
+const lightbox = document.querySelector(".lightbox");
+
+let amountValue = 0;
+let currentImg = 1;
