@@ -75,6 +75,7 @@ function closeLightBox() {
 function openLightBox() {
   lightbox.classList.remove("invisible");
 }
+
 function addItem() {
     if (amountValue > 0) {
         const total = 125.00 * amountValue;
@@ -94,8 +95,39 @@ function addItem() {
     indicator.innerText = amountValue;
 }
 }
+
 function deleteItem() {
     wrp.classList.add("empty");
     wrp.innerHTML = `<p>Your cart is empty</p>`;
     indicator.style.display = "none";
 }
+
+
+images.forEach((image) => {
+    image.addEventListener("click", () => {
+      const lastImg = document.querySelectorAll(".selected");
+      if (lastImg) {
+        lastImg[0].classList.remove("selected");
+      }
+      image.classList.add("selected");
+      const selectedImg = document.querySelector(".selected");
+      switch (selectedImg.getAttribute("src")) {
+        case "./images/image-product-1-thumbnail.jpg":
+          mainThumbnail.src = "./images/image-product-1.jpg";
+          mainThumbnailLightBox.src = "./images/image-product-1.jpg";
+          break;
+        case "./images/image-product-2-thumbnail.jpg":
+          mainThumbnail.src = "./images/image-product-2.jpg";
+          mainThumbnailLightBox.src = "./images/image-product-2.jpg";
+          break;
+        case "./images/image-product-3-thumbnail.jpg":
+          mainThumbnail.src = "./images/image-product-3.jpg";
+          mainThumbnailLightBox.src = "./images/image-product-3.jpg";
+          break;
+        case "./images/image-product-4-thumbnail.jpg":
+          mainThumbnail.src = "./images/image-product-4.jpg";
+          mainThumbnailLightBox.src = "./images/image-product-4.jpg";
+          break;
+      }
+    });
+  });
