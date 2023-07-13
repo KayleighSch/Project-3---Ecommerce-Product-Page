@@ -131,3 +131,14 @@ images.forEach((image) => {
       }
     });
   });
+ 
+menuBtn.addEventListener("click", openMenu);
+closeBtn.addEventListener("click", closeMenu);
+plusBtn.addEventListener("click", handlePlus);
+minusBtn.addEventListener("click", handleMinus);
+nextBtn.addEventListener("click", nextImage);
+prevBtn.addEventListener("click", prevImage);
+cartBtn.addEventListener("click", toggleCart);
+closeLightboxBtn.addEventListener("click", closeLightBox);
+mainThumbnail.addEventListener("click", openLightBox);
+addBtn.addEventListener("click", addItem);
