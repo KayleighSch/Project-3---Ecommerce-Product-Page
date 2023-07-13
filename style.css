@@ -396,6 +396,47 @@ main {
     filter: brightness(5);
 }
 
+/* Lightbox styles */
+.lightbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lightbox-wrapper {
+    position: relative;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    color: orange;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-lightbox:hover img {
+    filter: sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1);
+}
+
+.close-lightbox img {
+    width: 20px;
+    height: 20px;
+}
+
+.lightbox .main-thumbnail {
+    width: 400px;
+}
+
 /* Attribution */
 .attribution { 
     font-size: 11px; text-align: center; 
@@ -404,3 +445,18 @@ main {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media screen and (max-width: 700px) {
+/* visibility actions */
+.hidden {
+    display: flex;
+}
+
+.invisible-mob {
+    display: none;
+}
+
+/* default styles */
+body {
+    position: relative;
+}}
